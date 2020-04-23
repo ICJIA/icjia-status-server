@@ -86,7 +86,7 @@ const servers = [
     github: 'https://github.com/ICJIA/spac-client-next'
   },
   {
-    name: "ICJIA researchHub api server",
+    name: "ICJIA Research Hub api server",
     proto: "https",
     options: {
       hostname: `researchhub.icjia-api.cloud`,
@@ -184,7 +184,7 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-gata-legacy'
   },
   {
-    name: "ICJIA researchhub deployment",
+    name: "ICJIA Research Hub deployment",
     proto: "https",
     options: {
       hostname: `researchhub.netlify.com`,
@@ -196,7 +196,7 @@ const servers = [
     github: 'https://github.com/ICJIA/researchhub'
   },
   {
-    name: "ICJIA researchhub site redirect",
+    name: "ICJIA Research Hub site redirect",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
@@ -208,7 +208,7 @@ const servers = [
   },
 
   {
-    name: "ICJIA researchhub Docs deployment",
+    name: "ICJIA Research Hub Docs deployment",
     proto: "https",
     options: {
       hostname: `researchhub-docs.netlify.com`,
@@ -220,7 +220,7 @@ const servers = [
     github: 'https://github.com/ICJIA/researchhub'
   },
   {
-    name: "ICJIA researchhub Docs site redirect",
+    name: "ICJIA Research Hub Docs site redirect",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
