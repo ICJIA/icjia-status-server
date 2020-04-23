@@ -1,5 +1,5 @@
 require("dotenv").config();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3040;
 const https = require("https");
 const express = require("express");
 const path = require("path");
@@ -46,7 +46,8 @@ const servers = [
     },
     category: "site",
     displayURL: false,
-    bageID: "c5bb4929-d406-4cf0-a82c-e803c3eaeb34"
+    bageID: "c5bb4929-d406-4cf0-a82c-e803c3eaeb34",
+    github: 'https://github.com/ICJIA/adult-redeploy-client-next'
   },
   {
     name: "Adult Redeploy Illinois site redirect",
@@ -72,7 +73,7 @@ const servers = [
     displayURL: true
   },
   {
-    name: "Sentencing Policy Advisory Council website",
+    name: "Sentencing Policy Advisory Council site",
     proto: "https",
     options: {
       hostname: `spac.illinois.gov`,
@@ -81,10 +82,11 @@ const servers = [
     },
     category: "site",
     badgeID: "71c65928-9986-4104-bd78-465726edb356",
-    displayURL: true
+    displayURL: true,
+    github: 'https://github.com/ICJIA/spac-client-next'
   },
   {
-    name: "ICJIA ResearchHub api server",
+    name: "ICJIA researchHub api server",
     proto: "https",
     options: {
       hostname: `researchhub.icjia-api.cloud`,
@@ -103,7 +105,8 @@ const servers = [
       method: "HEAD"
     },
     displayURL: true,
-    category: "api"
+    category: "api",
+    github: 'https://github.com/ICJIA/icjia-document-archive-server'
   },
 
   {
@@ -116,7 +119,8 @@ const servers = [
     },
     category: "site",
     badgeID: "f93389c6-7593-495f-9309-6a3a9729eb81",
-    displayURL: true
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-document-archive-client'
   },
   {
     name: "ICJIA GATA deployment",
@@ -128,7 +132,8 @@ const servers = [
     },
     category: "site",
     badgeID: "2de6c7f6-eb69-4419-baf5-7e54a8943b00",
-    displayURL: false
+    displayURL: false,
+    github: 'https://github.com/ICJIA/icjia-gata-next-2020'
   },
   {
     name: "ICJIA GATA site redirect",
@@ -151,7 +156,8 @@ const servers = [
     },
     category: "site",
     badgeID: "90d739fc-a5ed-459d-8616-d05a6a9e235d",
-    displayURL: false
+    displayURL: false,
+    github: 'https://github.com/ICJIA/icjia-r3'
   },
   {
     name: "ICJIA R3 site redirect",
@@ -165,7 +171,7 @@ const servers = [
     displayURL: true
   },
   {
-    name: "ICJIA GATA legacy website",
+    name: "ICJIA GATA site (legacy)",
     proto: "https",
     options: {
       hostname: `legacy-grants.icjia.cloud`,
@@ -174,10 +180,11 @@ const servers = [
     },
     category: "site",
     badgeID: "36772a61-8687-4f4b-b7ed-75d6d3aeebf5",
-    displayURL: true
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-gata-legacy'
   },
   {
-    name: "ICJIA ResearchHub deployment",
+    name: "ICJIA researchhub deployment",
     proto: "https",
     options: {
       hostname: `researchhub.netlify.com`,
@@ -185,10 +192,11 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
-    displayURL: false
+    displayURL: false,
+    github: 'https://github.com/ICJIA/researchhub'
   },
   {
-    name: "ICJIA ResearchHub site redirect",
+    name: "ICJIA researchhub site redirect",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
@@ -200,7 +208,7 @@ const servers = [
   },
 
   {
-    name: "ICJIA ResearchHub Docs deployment",
+    name: "ICJIA researchhub Docs deployment",
     proto: "https",
     options: {
       hostname: `researchhub-docs.netlify.com`,
@@ -208,10 +216,11 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
-    displayURL: false
+    displayURL: false,
+    github: 'https://github.com/ICJIA/researchhub'
   },
   {
-    name: "ICJIA ResearchHub Docs site redirect",
+    name: "ICJIA researchhub Docs site redirect",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
@@ -227,11 +236,12 @@ const servers = [
     proto: "http",
     options: {
       hostname: `www.icjia.state.il.us`,
-      path: "/",
+      path: "/healthcheck",
       method: "HEAD"
     },
     category: "site",
-    displayURL: true
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-public-website'
   },
   {
     name: "ICJIA public site redirect",
@@ -254,10 +264,11 @@ const servers = [
     },
     category: "site",
     badgeID: "f3ad230c-0ccc-421e-b822-484276a3069b",
-    displayURL: true
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-illinois-heals'
   },
   {
-    name: "ICJIA Coronavirus Information api server",
+    name: "ICJIA coronavirus information api server",
     proto: "https",
     options: {
       hostname: `coronavirus.icjia-api.cloud`,
@@ -265,13 +276,39 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
-    displayURL: true
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-coronavirus-information-server'
+  },
+  {
+    name: "ICJIA site status api server",
+    proto: "https",
+    options: {
+      hostname: `status.icjia-api.cloud`,
+      path: "/healthcheck",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-status-server'
+  },
+  {
+    name: "ICJIA site status deployment",
+    proto: "https",
+    options: {
+      hostname: `icjia-status.netlify.com`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-status',
+    badgeID: 'ec8416ef-1c8e-495c-a2d6-500f1a03af36'
   }
 ];
 
 function queryHttps(server) {
   // eslint-disable-next-line no-unused-vars
-  return new Promise(function(resolve, reject) {
+  return new Promise(function (resolve, reject) {
     let start = new Date();
     request = https.get(server.options, response => {
       let end = new Date();
