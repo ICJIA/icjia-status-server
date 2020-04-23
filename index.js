@@ -230,7 +230,52 @@ const servers = [
     category: "redirect",
     displayURL: true
   },
-
+  {
+    name: "ICJIA Research Hub Preview deployment",
+    proto: "https",
+    options: {
+      hostname: `researchhub-preview.netlify.com`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: false,
+    github: 'https://github.com/ICJIA/researchhub-preview'
+  },
+  {
+    name: "ICJIA Research Hub Preview site redirect",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/researchhub/preview",
+      method: "HEAD"
+    },
+    category: "redirect",
+    displayURL: true
+  },
+  {
+    name: "ICJIA Research Hub Studio deployment",
+    proto: "https",
+    options: {
+      hostname: `researchhub-studio.netlify.com`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: false,
+    github: 'https://github.com/ICJIA/researchhub-studio'
+  },
+  {
+    name: "ICJIA Research Hub Studio site redirect",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/researchhub/studio",
+      method: "HEAD"
+    },
+    category: "redirect",
+    displayURL: true
+  },
   {
     name: "ICJIA public deployment",
     proto: "http",
