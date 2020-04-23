@@ -192,6 +192,7 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
+    badgeID: "ec5d97dc-175c-47c6-9d4c-81cff1389b04",
     displayURL: false,
     github: 'https://github.com/ICJIA/researchhub'
   },
@@ -216,6 +217,7 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
+    badgeID: "ddd1e0fc-f083-4e0b-b498-a94f092cc5c3",
     displayURL: false,
     github: 'https://github.com/ICJIA/researchhub-docs'
   },
@@ -239,6 +241,7 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
+    badgeID: "dbd6b99c-0425-4747-b56a-f9cf110d0d21",
     displayURL: false,
     github: 'https://github.com/ICJIA/researchhub-preview'
   },
@@ -262,6 +265,7 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
+    badgeID: "06ee6f20-0531-45dc-a337-d4357f903aeb",
     displayURL: false,
     github: 'https://github.com/ICJIA/researchhub-studio'
   },
