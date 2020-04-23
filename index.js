@@ -217,7 +217,7 @@ const servers = [
     },
     category: "site",
     displayURL: false,
-    github: 'https://github.com/ICJIA/researchhub'
+    github: 'https://github.com/ICJIA/researchhub-docs'
   },
   {
     name: "ICJIA Research Hub Docs site redirect",
