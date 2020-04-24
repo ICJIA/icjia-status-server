@@ -86,7 +86,7 @@ const servers = [
     github: 'https://github.com/ICJIA/spac-client-next'
   },
   {
-    name: "ICJIA researchHub api server",
+    name: "ICJIA Research Hub api server",
     proto: "https",
     options: {
       hostname: `researchhub.icjia-api.cloud`,
@@ -184,7 +184,7 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-gata-legacy'
   },
   {
-    name: "ICJIA researchhub deployment",
+    name: "ICJIA Research Hub deployment",
     proto: "https",
     options: {
       hostname: `researchhub.netlify.com`,
@@ -192,11 +192,12 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
+    badgeID: "ec5d97dc-175c-47c6-9d4c-81cff1389b04",
     displayURL: false,
     github: 'https://github.com/ICJIA/researchhub'
   },
   {
-    name: "ICJIA researchhub site redirect",
+    name: "ICJIA Research Hub site redirect",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
@@ -208,7 +209,7 @@ const servers = [
   },
 
   {
-    name: "ICJIA researchhub Docs deployment",
+    name: "ICJIA Research Hub Docs deployment",
     proto: "https",
     options: {
       hostname: `researchhub-docs.netlify.com`,
@@ -216,11 +217,12 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
+    badgeID: "ddd1e0fc-f083-4e0b-b498-a94f092cc5c3",
     displayURL: false,
-    github: 'https://github.com/ICJIA/researchhub'
+    github: 'https://github.com/ICJIA/researchhub-docs'
   },
   {
-    name: "ICJIA researchhub Docs site redirect",
+    name: "ICJIA Research Hub Docs site redirect",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
@@ -230,7 +232,54 @@ const servers = [
     category: "redirect",
     displayURL: true
   },
-
+  {
+    name: "ICJIA Research Hub Preview deployment",
+    proto: "https",
+    options: {
+      hostname: `researchhub-preview.netlify.com`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    badgeID: "dbd6b99c-0425-4747-b56a-f9cf110d0d21",
+    displayURL: false,
+    github: 'https://github.com/ICJIA/researchhub-preview'
+  },
+  {
+    name: "ICJIA Research Hub Preview site redirect",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/researchhub/preview",
+      method: "HEAD"
+    },
+    category: "redirect",
+    displayURL: true
+  },
+  {
+    name: "ICJIA Research Hub Studio deployment",
+    proto: "https",
+    options: {
+      hostname: `researchhub-studio.netlify.com`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    badgeID: "06ee6f20-0531-45dc-a337-d4357f903aeb",
+    displayURL: false,
+    github: 'https://github.com/ICJIA/researchhub-studio'
+  },
+  {
+    name: "ICJIA Research Hub Studio site redirect",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/researchhub/studio",
+      method: "HEAD"
+    },
+    category: "redirect",
+    displayURL: true
+  },
   {
     name: "ICJIA public deployment",
     proto: "http",
