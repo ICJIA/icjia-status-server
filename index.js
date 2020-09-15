@@ -135,12 +135,37 @@ const servers = [
     displayURL: false,
     github: 'https://github.com/ICJIA/icjia-gata-next-2020'
   },
+  
   {
     name: "ICJIA GATA site redirect",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
       path: "/gata",
+      method: "HEAD"
+    },
+    category: "redirect",
+    displayURL: true
+  },
+  {
+    name: "ICJIA DICRA deployment",
+    proto: "https",
+    options: {
+      hostname: `lucid-aryabhata-4f09d8.netlify.app`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    badgeID: "7b0cebc2-2016-4528-96e6-3a4687330287",
+    displayURL: false,
+    github: 'https://github.com/ICJIA/icjia-dicra'
+  },
+  {
+    name: "ICJIA DICRA site redirect",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/dicra",
       method: "HEAD"
     },
     category: "redirect",
