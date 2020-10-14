@@ -37,6 +37,30 @@ const servers = [
     displayURL: true
   },
   {
+    name: "ICJIA COVID deployment",
+    proto: "https",
+    options: {
+      hostname: `icjia-covid19.netlify.app`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: false,
+    badgeID: "a08caed8-177f-4ac8-9d1c-9fdb1edd6c0f",
+    github: 'https://github.com/ICJIA/icjia-covid19-news'
+  },
+  {
+    name: "ICJIA COVID redirect",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/covid19",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: true
+  },
+  {
     name: "Adult Redeploy Illinois deployment",
     proto: "https",
     options: {
@@ -84,6 +108,30 @@ const servers = [
     badgeID: "71c65928-9986-4104-bd78-465726edb356",
     displayURL: true,
     github: 'https://github.com/ICJIA/spac-client-next'
+  },
+  {
+    name: "ICJIA Intranet api server",
+    proto: "https",
+    options: {
+      hostname: `dev.icjia-api.cloud`,
+      path: "/_health",
+      method: "HEAD"
+    },
+    category: "api",
+    displayURL: true
+  },
+  {
+    name: "ICJIA Intranet site",
+    proto: "https",
+    options: {
+      hostname: `intranet.icjia.cloud`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    badgeID: "d2541ea1-ab56-48b5-840c-d2f26d57b887",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-intranet-client'
   },
   {
     name: "ICJIA Research Hub api server",
@@ -377,7 +425,58 @@ const servers = [
     displayURL: true,
     github: 'https://github.com/ICJIA/icjia-status',
     badgeID: 'ec8416ef-1c8e-495c-a2d6-500f1a03af36'
-  }
+  },
+  {
+    name: "ICJIA Markdown Editor",
+    proto: "https",
+    options: {
+      hostname: `markdown.icjia.cloud`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-markdown-next',
+    badgeID: 'efc7c372-8945-4089-acbd-5201f59a753e'
+  },
+  {
+    name: "ICJIA FSGU Calendar (INTERNAL)",
+    proto: "https",
+    options: {
+      hostname: `calendar.icjia.cloud`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-calendar',
+    badgeID: '711d72d1-a0a7-45ac-9b01-a3d01f9a1a40'
+  },
+  {
+    name: "ICJIA Criminal Justice Reform Commission",
+    proto: "http",
+    options: {
+      hostname: `www.icjia.state.il.us`,
+      path: "/cjreform2015",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-criminal-justice-reform-commission'
+  },
+  {
+    name: "ICJIA Family Violence Coordinating Councils",
+    proto: "http",
+    options: {
+      hostname: `www.icjia.state.il.us`,
+      path: "/ifvcc",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-public'
+  },
+  
 ];
 
 function queryHttps(server) {
