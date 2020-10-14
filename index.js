@@ -280,6 +280,18 @@ const servers = [
     category: "redirect",
     displayURL: true
   },
+  {
+    name: "ICJIA Research Hub Shinyproxy server",
+    proto: "https",
+    options: {
+      hostname: `app.icjia.cloud`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/shinyproxy-containerized'
+  },
 
   {
     name: "ICJIA Research Hub Docs deployment",
