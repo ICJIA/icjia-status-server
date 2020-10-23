@@ -512,8 +512,6 @@ const servers = [
     category: "redirect",
     displayURL: true
   },
-  
-  
 ];
 
 function queryHttps(server) {
