@@ -488,6 +488,31 @@ const servers = [
     displayURL: true,
     github: 'https://github.com/ICJIA/icjia-public'
   },
+  {
+    name: "ICJIA IRB deployment",
+    proto: "https",
+    options: {
+      hostname: `icjia-irb.netlify.app`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "site",
+    badgeID: "f3e4ce5f-9c40-4bb4-81e0-8411f99d9dd5",
+    displayURL: false,
+    github: 'https://github.com/ICJIA/icjia-irb-next'
+  },
+  {
+    name: "ICJIA IRB site redirect",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/irb/",
+      method: "HEAD"
+    },
+    category: "redirect",
+    displayURL: true
+  },
+  
   
 ];
 
