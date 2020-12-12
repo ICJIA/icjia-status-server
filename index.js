@@ -144,6 +144,17 @@ const servers = [
     category: "api",
     displayURL: true
   },
+   {
+    name: "ICJIA IFVCC api server",
+    proto: "https",
+    options: {
+      hostname: `ifvcc.icjia-api.cloud`,
+      path: "/_health",
+      method: "HEAD"
+    },
+    category: "api",
+    displayURL: true
+  },
   {
     name: "ICJIA document archive api server",
     proto: "https",
