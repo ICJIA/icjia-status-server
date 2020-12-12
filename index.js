@@ -13,17 +13,17 @@ app.use(cors());
 let request;
 
 const servers = [
-  {
-    name: "ICJIA image server",
-    proto: "https",
-    options: {
-      hostname: `image.icjia.cloud`,
-      path: "/healthcheck",
-      method: "GET"
-    },
-    category: "image",
-    displayURL: true
-  },
+  // {
+  //   name: "ICJIA image server",
+  //   proto: "https",
+  //   options: {
+  //     hostname: `image.icjia.cloud`,
+  //     path: "/healthcheck",
+  //     method: "GET"
+  //   },
+  //   category: "image",
+  //   displayURL: true
+  // },
 
   {
     name: "Adult Redeploy Illinois api server",
@@ -183,7 +183,7 @@ const servers = [
     displayURL: false,
     github: 'https://github.com/ICJIA/icjia-gata-next-2020'
   },
-  
+
   {
     name: "ICJIA GATA site redirect",
     proto: "https",
