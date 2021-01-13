@@ -33,7 +33,8 @@ const servers = [
       method: "HEAD"
     },
     category: "image",
-    displayURL: true
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-nodemailer'
   },
 
   {
@@ -372,7 +373,7 @@ const servers = [
     badgeID: 'efc7c372-8945-4089-acbd-5201f59a753e'
   },
   {
-    name: "ICJIA FSGU Calendar (INTERNAL)",
+    name: "ICJIA FSGU Calendar site",
     proto: "https",
     options: {
       hostname: `calendar.icjia.cloud`,
@@ -383,6 +384,18 @@ const servers = [
     displayURL: true,
     github: 'https://github.com/ICJIA/icjia-calendar',
     badgeID: '711d72d1-a0a7-45ac-9b01-a3d01f9a1a40'
+  },
+  {
+    name: "ICJIA FSGU Calendar API Server",
+    proto: "https",
+    options: {
+      hostname: `content.icjia-api.cloud`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "api",
+    displayURL: true,
+   
   },
   {
     name: "ICJIA Criminal Justice Reform Commission site",
@@ -409,7 +422,7 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-public'
   },
   {
-    name: "ICJIA IRB site",
+    name: "ICJIA Institutional Review Board site",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
