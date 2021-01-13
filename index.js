@@ -24,6 +24,17 @@ const servers = [
     category: "image",
     displayURL: true
   },
+  {
+    name: "ICJIA mail server",
+    proto: "https",
+    options: {
+      hostname: `mail.icjia.cloud`,
+      path: "/",
+      method: "HEAD"
+    },
+    category: "image",
+    displayURL: true
+  },
 
   {
     name: "Adult Redeploy Illinois api server",
