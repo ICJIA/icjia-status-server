@@ -37,7 +37,7 @@ const servers = [
   },
 
   {
-    name: "Adult Redeploy Illinois api server",
+    name: "Adult Redeploy Illinois API server",
     proto: "https",
     options: {
       hostname: `ari.icjia-api.cloud`,
@@ -48,44 +48,7 @@ const servers = [
     displayURL: true
   },
   {
-    name: "ICJIA COVID deployment",
-    proto: "https",
-    options: {
-      hostname: `icjia-covid19.netlify.app`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: false,
-    badgeID: "a08caed8-177f-4ac8-9d1c-9fdb1edd6c0f",
-    github: 'https://github.com/ICJIA/icjia-covid19-news'
-  },
-  {
-    name: "ICJIA COVID redirect",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/covid19",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: true
-  },
-  {
-    name: "Adult Redeploy Illinois deployment",
-    proto: "https",
-    options: {
-      hostname: `adultredeploy-dev.netlify.com`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: false,
-    bageID: "c5bb4929-d406-4cf0-a82c-e803c3eaeb34",
-    github: 'https://github.com/ICJIA/adult-redeploy-client-next'
-  },
-  {
-    name: "Adult Redeploy Illinois site redirect",
+    name: "Adult Redeploy Illinois site",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
@@ -93,11 +56,27 @@ const servers = [
       method: "HEAD"
     },
     category: "site",
-    displayURL: true
+    displayURL: true,
+    bageID: "c5bb4929-d406-4cf0-a82c-e803c3eaeb34",
+    github: 'https://github.com/ICJIA/adult-redeploy-client-next'
   },
+  {
+    name: "ICJIA COVID site",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/covid19",
+      method: "HEAD"
+    },
+    category: "site",
+    displayURL: true,
+    badgeID: "a08caed8-177f-4ac8-9d1c-9fdb1edd6c0f",
+    github: 'https://github.com/ICJIA/icjia-covid19-news'
+  },
+  
 
   {
-    name: "Sentencing Policy Advisory Council api server",
+    name: "Sentencing Policy Advisory Council API server",
     proto: "https",
     options: {
       hostname: `spac.icjia-api.cloud`,
@@ -121,7 +100,7 @@ const servers = [
     github: 'https://github.com/ICJIA/spac-client-next'
   },
   {
-    name: "ICJIA Intranet api server",
+    name: "ICJIA Intranet API server",
     proto: "https",
     options: {
       hostname: `dev.icjia-api.cloud`,
@@ -145,7 +124,7 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-intranet-client'
   },
   {
-    name: "ICJIA Research Hub api server",
+    name: "ICJIA Research Hub API server",
     proto: "https",
     options: {
       hostname: `researchhub.icjia-api.cloud`,
@@ -156,7 +135,7 @@ const servers = [
     displayURL: true
   },
    {
-    name: "ICJIA IFVCC api server",
+    name: "ICJIA IFVCC API server",
     proto: "https",
     options: {
       hostname: `ifvcc.icjia-api.cloud`,
@@ -167,7 +146,7 @@ const servers = [
     displayURL: true
   },
   {
-    name: "ICJIA document archive api server",
+    name: "ICJIA Document Archive API server",
     proto: "https",
     options: {
       hostname: `archive.icjia-api.cloud`,
@@ -180,7 +159,7 @@ const servers = [
   },
 
   {
-    name: "ICJIA document archive website",
+    name: "ICJIA document archive site",
     proto: "https",
     options: {
       hostname: `archive.icjia.cloud`,
@@ -193,78 +172,47 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-document-archive-client'
   },
   {
-    name: "ICJIA GATA deployment",
-    proto: "https",
-    options: {
-      hostname: `gatadev.netlify.com`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "2de6c7f6-eb69-4419-baf5-7e54a8943b00",
-    displayURL: false,
-    github: 'https://github.com/ICJIA/icjia-gata-next-2020'
-  },
-
-  {
-    name: "ICJIA GATA site redirect",
+    name: "ICJIA GATA site",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
       path: "/gata",
       method: "HEAD"
     },
-    category: "redirect",
-    displayURL: true
-  },
-  {
-    name: "ICJIA DICRA deployment",
-    proto: "https",
-    options: {
-      hostname: `lucid-aryabhata-4f09d8.netlify.app`,
-      path: "/",
-      method: "HEAD"
-    },
     category: "site",
-    badgeID: "7b0cebc2-2016-4528-96e6-3a4687330287",
-    displayURL: false,
-    github: 'https://github.com/ICJIA/icjia-dicra'
+    badgeID: "2de6c7f6-eb69-4419-baf5-7e54a8943b00",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-gata-next-2020'
   },
+
   {
-    name: "ICJIA DICRA site redirect",
+    name: "ICJIA DICRA site",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
       path: "/dicra",
       method: "HEAD"
     },
-    category: "redirect",
-    displayURL: true
-  },
-  {
-    name: "ICJIA R3 deployment",
-    proto: "https",
-    options: {
-      hostname: `icjia-r3.netlify.com`,
-      path: "/",
-      method: "HEAD"
-    },
     category: "site",
-    badgeID: "90d739fc-a5ed-459d-8616-d05a6a9e235d",
-    displayURL: false,
-    github: 'https://github.com/ICJIA/icjia-r3'
+    badgeID: "7b0cebc2-2016-4528-96e6-3a4687330287",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-dicra'
   },
+
   {
-    name: "ICJIA R3 site redirect",
+    name: "ICJIA R3 site",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
       path: "/r3",
       method: "HEAD"
     },
-    category: "redirect",
-    displayURL: true
+    category: "site",
+    badgeID: "90d739fc-a5ed-459d-8616-d05a6a9e235d",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-r3'
   },
+
   {
     name: "ICJIA GATA site (legacy)",
     proto: "https",
@@ -279,29 +227,19 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-gata-legacy'
   },
   {
-    name: "ICJIA Research Hub deployment",
-    proto: "https",
-    options: {
-      hostname: `researchhub.netlify.com`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "ec5d97dc-175c-47c6-9d4c-81cff1389b04",
-    displayURL: false,
-    github: 'https://github.com/ICJIA/researchhub'
-  },
-  {
-    name: "ICJIA Research Hub site redirect",
+    name: "ICJIA Research Hub site",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
       path: "/researchhub",
       method: "HEAD"
     },
-    category: "redirect",
-    displayURL: true
+    category: "site",
+    badgeID: "ec5d97dc-175c-47c6-9d4c-81cff1389b04",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/researchhub'
   },
+
   {
     name: "ICJIA Research Hub Shinyproxy server",
     proto: "https",
@@ -316,79 +254,49 @@ const servers = [
   },
 
   {
-    name: "ICJIA Research Hub Docs deployment",
-    proto: "https",
-    options: {
-      hostname: `researchhub-docs.netlify.com`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "ddd1e0fc-f083-4e0b-b498-a94f092cc5c3",
-    displayURL: false,
-    github: 'https://github.com/ICJIA/researchhub-docs'
-  },
-  {
-    name: "ICJIA Research Hub Docs site redirect",
+    name: "ICJIA Research Hub Documentation",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
       path: "/researchhub/docs",
       method: "HEAD"
     },
-    category: "redirect",
-    displayURL: true
-  },
-  {
-    name: "ICJIA Research Hub Preview deployment",
-    proto: "https",
-    options: {
-      hostname: `researchhub-preview.netlify.com`,
-      path: "/",
-      method: "HEAD"
-    },
     category: "site",
-    badgeID: "dbd6b99c-0425-4747-b56a-f9cf110d0d21",
-    displayURL: false,
-    github: 'https://github.com/ICJIA/researchhub-preview'
+    badgeID: "ddd1e0fc-f083-4e0b-b498-a94f092cc5c3",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/researchhub-docs'
   },
+
   {
-    name: "ICJIA Research Hub Preview site redirect",
+    name: "ICJIA Research Hub Preview site",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
       path: "/researchhub/preview",
       method: "HEAD"
     },
-    category: "redirect",
-    displayURL: true
-  },
-  {
-    name: "ICJIA Research Hub Studio deployment",
-    proto: "https",
-    options: {
-      hostname: `researchhub-studio.netlify.com`,
-      path: "/",
-      method: "HEAD"
-    },
     category: "site",
-    badgeID: "06ee6f20-0531-45dc-a337-d4357f903aeb",
-    displayURL: false,
-    github: 'https://github.com/ICJIA/researchhub-studio'
+    badgeID: "dbd6b99c-0425-4747-b56a-f9cf110d0d21",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/researchhub-preview'
   },
+
   {
-    name: "ICJIA Research Hub Studio site redirect",
+    name: "ICJIA Research Hub Studio site",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
       path: "/researchhub/studio",
       method: "HEAD"
     },
-    category: "redirect",
-    displayURL: true
+    category: "site",
+    badgeID: "06ee6f20-0531-45dc-a337-d4357f903aeb",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/researchhub-studio'
   },
+
   {
-    name: "ICJIA public deployment",
+    name: "ICJIA public site",
     proto: "http",
     options: {
       hostname: `www.icjia.state.il.us`,
@@ -399,17 +307,7 @@ const servers = [
     displayURL: true,
     github: 'https://github.com/ICJIA/icjia-public-website'
   },
-  {
-    name: "ICJIA public site redirect",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "redirect",
-    displayURL: true
-  },
+  
   {
     name: "Illinois HEALS site",
     proto: "https",
@@ -424,7 +322,7 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-illinois-heals'
   },
   {
-    name: "ICJIA coronavirus information api server",
+    name: "ICJIA coronavirus information API server",
     proto: "https",
     options: {
       hostname: `coronavirus.icjia-api.cloud`,
@@ -436,7 +334,7 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-coronavirus-information-server'
   },
   {
-    name: "ICJIA site status api server",
+    name: "ICJIA site status API server",
     proto: "https",
     options: {
       hostname: `status.icjia-api.cloud`,
@@ -448,7 +346,7 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-status-server'
   },
   {
-    name: "ICJIA site status deployment",
+    name: "ICJIA status site",
     proto: "https",
     options: {
       hostname: `icjia-status.netlify.com`,
@@ -487,7 +385,7 @@ const servers = [
     badgeID: '711d72d1-a0a7-45ac-9b01-a3d01f9a1a40'
   },
   {
-    name: "ICJIA Criminal Justice Reform Commission",
+    name: "ICJIA Criminal Justice Reform Commission site",
     proto: "http",
     options: {
       hostname: `www.icjia.state.il.us`,
@@ -511,29 +409,45 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-public'
   },
   {
-    name: "ICJIA IRB deployment",
-    proto: "https",
-    options: {
-      hostname: `icjia-irb.netlify.app`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "f3e4ce5f-9c40-4bb4-81e0-8411f99d9dd5",
-    displayURL: false,
-    github: 'https://github.com/ICJIA/icjia-irb-next'
-  },
-  {
-    name: "ICJIA IRB site redirect",
+    name: "ICJIA IRB site",
     proto: "https",
     options: {
       hostname: `icjia.illinois.gov`,
       path: "/irb/",
       method: "HEAD"
     },
-    category: "redirect",
-    displayURL: true
+    category: "site",
+    badgeID: "f3e4ce5f-9c40-4bb4-81e0-8411f99d9dd5",
+    displayURL: true,
+    github: 'https://github.com/ICJIA/icjia-irb-next'
   },
+  {
+    name: "ICJIA Arrest Explorer",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/arrestexplorer/",
+      method: "HEAD"
+    },
+    category: "site",
+    badgeID: '20a96cf3-a8d5-4ece-8105-ae485c4ce3da',
+    displayURL: true,
+    github: 'https://github.com/ICJIA/arrest_explorer'
+  },
+  {
+    name: "ICJIA Arrest Explorer Documentation",
+    proto: "https",
+    options: {
+      hostname: `icjia.illinois.gov`,
+      path: "/arrestexplorer/docs/",
+      method: "HEAD"
+    },
+    category: "site",
+    
+    displayURL: true,
+    github: 'https://github.com/ICJIA/arrest_explorer'
+  },
+ 
 ];
 
 function queryHttps(server) {
