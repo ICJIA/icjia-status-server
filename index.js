@@ -61,19 +61,7 @@ const servers = [
     bageID: "c5bb4929-d406-4cf0-a82c-e803c3eaeb34",
     github: 'https://github.com/ICJIA/adult-redeploy-client-next'
   },
-  {
-    name: "ICJIA COVID site",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/covid19",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: true,
-    badgeID: "a08caed8-177f-4ac8-9d1c-9fdb1edd6c0f",
-    github: 'https://github.com/ICJIA/icjia-covid19-news'
-  },
+ 
   
 
   {
@@ -172,33 +160,9 @@ const servers = [
     displayURL: true,
     github: 'https://github.com/ICJIA/icjia-document-archive-client'
   },
-  {
-    name: "ICJIA GATA site",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/gata",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "2de6c7f6-eb69-4419-baf5-7e54a8943b00",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-gata-next-2020'
-  },
+  
 
-  {
-    name: "ICJIA DICRA site",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/dicra",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "7b0cebc2-2016-4528-96e6-3a4687330287",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-dicra'
-  },
+ 
 
   {
     name: "ICJIA R3 site",
@@ -227,19 +191,7 @@ const servers = [
     displayURL: true,
     github: 'https://github.com/ICJIA/icjia-gata-legacy'
   },
-  {
-    name: "ICJIA Research Hub site",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/researchhub",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "ec5d97dc-175c-47c6-9d4c-81cff1389b04",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/researchhub'
-  },
+  
 
   {
     name: "ICJIA Research Hub Shinyproxy server",
@@ -254,26 +206,14 @@ const servers = [
     github: 'https://github.com/ICJIA/shinyproxy-containerized'
   },
 
-  {
-    name: "ICJIA Research Hub Documentation",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/researchhub/docs",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "ddd1e0fc-f083-4e0b-b498-a94f092cc5c3",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/researchhub-docs'
-  },
+  
 
   {
     name: "ICJIA Research Hub Preview site",
     proto: "https",
     options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/researchhub/preview",
+      hostname: `preview.icjia.cloud`,
+      path: "/",
       method: "HEAD"
     },
     category: "site",
@@ -300,13 +240,14 @@ const servers = [
     name: "ICJIA public site",
     proto: "http",
     options: {
-      hostname: `www.icjia.state.il.us`,
-      path: "/healthcheck",
+      hostname: `agency.icjia.cloud`,
+      path: "/",
       method: "HEAD"
     },
     category: "site",
+    badgeID: "e6614e77-00b4-4772-8034-a3b9c9c9986d",
     displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-public-website'
+    github: 'https://github.com/ICJIA/icjia-public-client-2021'
   },
   
   {
@@ -322,18 +263,7 @@ const servers = [
     displayURL: true,
     github: 'https://github.com/ICJIA/icjia-illinois-heals'
   },
-  {
-    name: "ICJIA coronavirus information API server",
-    proto: "https",
-    options: {
-      hostname: `coronavirus.icjia-api.cloud`,
-      path: "/healthcheck",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-coronavirus-information-server'
-  },
+ 
   {
     name: "ICJIA site status API server",
     proto: "https",
@@ -397,43 +327,9 @@ const servers = [
     displayURL: true,
    
   },
-  {
-    name: "ICJIA Criminal Justice Reform Commission site",
-    proto: "http",
-    options: {
-      hostname: `www.icjia.state.il.us`,
-      path: "/cjreform2015",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-criminal-justice-reform-commission'
-  },
-  {
-    name: "ICJIA Family Violence Coordinating Councils",
-    proto: "http",
-    options: {
-      hostname: `www.icjia.state.il.us`,
-      path: "/ifvcc",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-public'
-  },
-  {
-    name: "ICJIA Institutional Review Board site",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/irb/",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "f3e4ce5f-9c40-4bb4-81e0-8411f99d9dd5",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-irb-next'
-  },
+  
+  
+  
   {
     name: "ICJIA Arrest Explorer",
     proto: "https",
