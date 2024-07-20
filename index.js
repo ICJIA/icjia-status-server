@@ -11,7 +11,6 @@ const axios = require("axios");
 app.use(cors());
 
 let request;
-
 const servers = [
   {
     name: "ICJIA image server",
@@ -112,28 +111,8 @@ const servers = [
     displayURL: true,
     github: 'https://github.com/ICJIA/icjia-intranet-client'
   },
-  {
-    name: "ICJIA Research Hub API server",
-    proto: "https",
-    options: {
-      hostname: `researchhub.icjia-api.cloud`,
-      path: "/_health",
-      method: "HEAD"
-    },
-    category: "api",
-    displayURL: true
-  },
-   {
-    name: "ICJIA IFVCC API server",
-    proto: "https",
-    options: {
-      hostname: `ifvcc.icjia-api.cloud`,
-      path: "/_health",
-      method: "HEAD"
-    },
-    category: "api",
-    displayURL: true
-  },
+  
+
   {
     name: "ICJIA Document Archive API server",
     proto: "https",
@@ -164,20 +143,7 @@ const servers = [
 
  
 
-  {
-    name: "ICJIA R3 site",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/r3",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "90d739fc-a5ed-459d-8616-d05a6a9e235d",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-r3'
-  },
-
+ 
   {
     name: "ICJIA GATA site (legacy)",
     proto: "https",
@@ -193,48 +159,9 @@ const servers = [
   },
   
 
-  {
-    name: "ICJIA Research Hub Shinyproxy server",
-    proto: "https",
-    options: {
-      hostname: `app.icjia.cloud`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/shinyproxy-containerized'
-  },
 
   
 
-  {
-    name: "ICJIA Research Hub Preview site",
-    proto: "https",
-    options: {
-      hostname: `preview.icjia.cloud`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "dbd6b99c-0425-4747-b56a-f9cf110d0d21",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/researchhub-preview'
-  },
-
-  {
-    name: "ICJIA Research Hub Studio site",
-    proto: "https",
-    options: {
-      hostname: `icjia.illinois.gov`,
-      path: "/researchhub/studio",
-      method: "HEAD"
-    },
-    category: "site",
-    badgeID: "06ee6f20-0531-45dc-a337-d4357f903aeb",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/researchhub-studio'
-  },
 
   {
     name: "ICJIA public site",
@@ -264,31 +191,7 @@ const servers = [
     github: 'https://github.com/ICJIA/icjia-illinois-heals'
   },
  
-  {
-    name: "ICJIA site status API server",
-    proto: "https",
-    options: {
-      hostname: `status.icjia-api.cloud`,
-      path: "/healthcheck",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-status-server'
-  },
-  {
-    name: "ICJIA status site",
-    proto: "https",
-    options: {
-      hostname: `icjia-status.netlify.com`,
-      path: "/",
-      method: "HEAD"
-    },
-    category: "site",
-    displayURL: true,
-    github: 'https://github.com/ICJIA/icjia-status',
-    badgeID: 'ec8416ef-1c8e-495c-a2d6-500f1a03af36'
-  },
+ 
   {
     name: "ICJIA Markdown Editor",
     proto: "https",
